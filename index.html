@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Marcel Broodthaers</title>
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <style type="text/css">
+            :root{
+                --ColorTextArticleReduit: white;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                font-size: 18px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            header{
+                width: 100%;
+                display: flex;
+            }
+            header>div{
+                position: relative;
+                width: 50%;
+                height: 60vh;
+            }
+            header div img{
+                object-fit: cover;
+                object-position: top center;
+                height: 100%;
+            }
+            .bloc_esq{
+                background: blue;
+            }
+            .bloc_esq img{
+                object-fit: cover;
+                object-position: top center;
+            }
+            .bloc_dret{
+                background: purple;
+            }
+            .bloc_dret img{
+                object-fit: cover;
+                object-position: center;
+            }
+            h1{
+                font-family: 'Fjalla One', sans-serif;
+                position: absolute;
+                text-align: center;
+                top: 49vh;
+                width: 100%;
+                font-size: 3vw;    
+            }
+            h2{
+                font-family: 'Open Sans', sans-serif;
+                position: absolute;
+                text-align: center;
+                padding: 40px 0;
+                top: 51vh;
+                width: 100%;
+                font-size: 1vw;    
+            }
+            article{
+                font-family: 'Open Sans', sans-serif;
+                margin: auto;
+                width: 33.4em;
+                font-size: 1vw;
+            }
+            article>p:first-child{
+                text-align: justify;
+                hyphens: auto;
+                color: #fff361;
+                padding: 8vw 0;
+                column-count: 2;
+                column-gap: 30px;
+                line-height: 1.4em;
+                column-rule: 1px solid black;
+            }
+            article #cos>p:first-child::first-letter{
+                font-family: 'Open Sans', sans-serif;
+                color: #fff361;
+                float: left;
+                font-size: 5em;
+                padding-right: 0.1em;
+                padding-top: -0.2em;
+                padding-bottom: 0.2em;    
+            }
+            article #cos{
+                width: auto;
+                text-align: justify;
+                hyphens: auto;
+                padding: 0 3em;
+                line-height: 1.4em;
+            }
+            article #cos p{
+                padding: 0 0 1.5em 0;
+            }
+            .cercle, .hexagon{
+                background: #fff361;
+            }
+            .cercle img, .hexagon img{
+                mix-blend-mode: luminosity;
+            }
+            .cercle, .cercle img{
+                border-radius: 50%;
+            }
+            .cercle{
+                float: left;
+                max-width: 20em;
+                margin-left: -8em;
+                shape-margin: 1em;
+                shape-outside: 
+            }
+            .hexagon, .hexagon img{
+                clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+            }
+            .hexagon{
+                float: right;
+                max-width: 20em;
+                margin-right: -8em;
+                shape-margin: 1em;
+                shape-outside: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+            }
+            @media (max-width:600px){
+                body{
+                    font-size: 10px;
+                    background: black;
+                    color: var(--ColorTextArticleReduit);
+                }
+                h1,h2{
+                    color: black;
+                }
+                article>p:first-child{
+                    color: #fff361;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="bloc_esq">
+                <img src="img/un.jpg">
+            </div>
+            <div class="bloc_dret">
+                <img src="img/dos.jpg">
+            </div>
+            <h1>Marcel Broodthaers, una retrospectiva</h1>
+            <h2>“contra la ideologia de l'art i contra l'art convertit en ideologia”</h2>
+        </header>
+        <article>
+            <p>
+                Marcel Broodthaers (Brussel·les, 1924 – Colònia, 1976) fou un dels artistes cabdals del segle XX per la seva capacitat de reelaborar el llenguatge de l'art i fusionar les diverses disciplines artístiques. Ha estat un dels principals artistes del segle xx que pertanyia a la corrent de l'Art conceptual i influït per la literatura i el Surrealisme.
+            </p>
+            <div id="cos">
+            <p>
+                Després de deixar els estudis de química, el 1945, va editar el seu primer llibre de poemes. Durant els anys quaranta i cinquanta va treballar en la seva obra poètica i també com a periodista, i el 1957 va fer la seva primera pel·lícula. Des del 1964 va incorporar altres mitjans visuals, com ara la fotografia, el collage i la producció d'objectes i, a partir d'aleshores, va produir una extensa obra gràfica, fílmica i textual sempre molt connectada amb la poesia. Hereu del surrealisme de Duchamp i Magritte, va portar fins a les últimes conseqüències una profunda reflexió sobre l'art i el museu com a institució.
+            </p>
+            <div class="cercle">
+                <img src="img/tresbn.jpg" alt="">
+            </div>
+            <p>
+                Amb una extensa obra gràfica, Broodthaers integra tota mena de materials (molts d'ells extrets de la naturalesa), construeix objectes paradoxals i fonamenta la seva creació en el llenguatge. Les seves obres es basen en la ironia, el jeroglífic i en l'ús de textos d'escriptors del segle xix (Baudelaire, Mallarmé, Dumas i La Fontaine) per ampliar-ne la crítica antiburgesa i antisocial. Autor i productor de més de cent projectes cinematogràfics, Broodthaers crea un nou gènere que fusiona cinema, imatge fixa, llenguatge i objectes. Les seves obres es troben en les col·leccions del MoMA de Nova York, de la Tate Modern de Londres, de l'Stedelijk Van Abbemuseum d'Eindhoven, del Centre Pompidou de París i del MACBA.
+            </p>
+            <div class="hexagon">
+                <img src="img/cincbn.jpg" alt="">
+            </div>
+            <p>
+                El seu treball abasta l'escriptura, el cinema, la producció d'objectes i l'obra gràfica. Partint de l'anàlisi marxista i de les teories estructuralistes del llenguatge, tota la seva obra pivota entorn de la reflexió sobre l'art i el lloc del museu com a institució. Broodthaers integra errors i girs del llenguatge, autors clàssics de la literatura, objectes de la vida quotidiana i materials procedents de la natura amb una gran llibertat. El cinema ha tingut un paper central en la seva producció, que aplega més d’un centenar d’obres cinematogràfiques. Al MACBA es conserva una còpia de la seva obra Le Corbeau et le renard.
+            </p>
+            </div>
+        </article>
+    </body>
+</html>
